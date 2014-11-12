@@ -1,0 +1,153 @@
+<%= form_for(@fthread) do |f| %>
+  <% if @fthread.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fthread.errors.count, "error") %> prohibited this fthread from being saved:</h2>
+
+      <ul>
+      <% @fthread.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_time %><br>
+    <%= f.text_field :posted_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_updated_time %><br>
+    <%= f.text_field :last_updated_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_updated_user %><br>
+    <%= f.text_field :last_updated_user %>
+  </div>
+  <div class="field">
+    <%= f.label :deleted %><br>
+    <%= f.text_field :deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :is_spam %><br>
+    <%= f.text_field :is_spam %>
+  </div>
+  <div class="field">
+    <%= f.label :stickied %><br>
+    <%= f.text_field :stickied %>
+  </div>
+  <div class="field">
+    <%= f.label :approved %><br>
+    <%= f.text_field :approved %>
+  </div>
+  <div class="field">
+    <%= f.label :unresolved %><br>
+    <%= f.text_field :unresolved %>
+  </div>
+  <div class="field">
+    <%= f.label :instructor_replied %><br>
+    <%= f.text_field :instructor_replied %>
+  </div>
+  <div class="field">
+    <%= f.label :num_posts %><br>
+    <%= f.text_field :num_posts %>
+  </div>
+  <div class="field">
+    <%= f.label :num_views %><br>
+    <%= f.text_field :num_views %>
+  </div>
+  <div class="field">
+    <%= f.label :votes %><br>
+    <%= f.text_field :votes %>
+  </div>
+  <div class="field">
+    <%= f.label :locked %><br>
+    <%= f.text_field :locked %>
+  </div>
+  <div class="field">
+    <%= f.label :anonymous %><br>
+    <%= f.text_field :anonymous %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :triage_sync_status %><br>
+    <%= f.text_field :triage_sync_status %>
+  </div>
+  <div class="field">
+    <%= f.label :triage_status %><br>
+    <%= f.text_field :triage_status %>
+  </div>
+  <div class="field">
+    <%= f.label :private %><br>
+    <%= f.text_field :private %>
+  </div>
+  <div class="field">
+    <%= f.label :problem_id %><br>
+    <%= f.text_field :problem_id %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :_reporter_link %><br>
+    <%= f.text_field :_reporter_link %>
+  </div>
+  <div class="field">
+    <%= f.label :_thread_can_be_resolved_without_triage %><br>
+    <%= f.text_field :_thread_can_be_resolved_without_triage %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_can_resolve_with_triage %><br>
+    <%= f.text_field :_viewer_can_resolve_with_triage %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br>
+    <%= f.text_field :tags %>
+  </div>
+  <div class="field">
+    <%= f.label :crumbs %><br>
+    <%= f.text_field :crumbs %>
+  </div>
+  <div class="field">
+    <%= f.label :start_page %><br>
+    <%= f.text_field :start_page %>
+  </div>
+  <div class="field">
+    <%= f.label :num_pages %><br>
+    <%= f.text_field :num_pages %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_subscription %><br>
+    <%= f.text_field :_viewer_subscription %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_can_edit_title %><br>
+    <%= f.text_field :_viewer_can_edit_title %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_can_resolve_without_triage %><br>
+    <%= f.text_field :_viewer_can_resolve_without_triage %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_can_delete %><br>
+    <%= f.text_field :_viewer_can_delete %>
+  </div>
+  <div class="field">
+    <%= f.label :_viewer_can_toggle_private %><br>
+    <%= f.text_field :_viewer_can_toggle_private %>
+  </div>
+  <div class="field">
+    <%= f.label :forum_id %><br>
+    <%= f.text_field :forum_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  post_time: MyString
+  deleted: MyString
+  is_spam: MyString
+  votes: MyString
+  anonymous: MyString
+  comment_text: MyString
+  user_agent: MyString
+  text_type: MyString
+  _viewer_can_vote: MyString
+  _viewer_can_edit: MyString
+  _user_title: MyString
+  _user_full_name: MyString
+  _user_profile_link: MyString
+  _user_email_address: MyString
+  _user_search_link: MyString
+  _user_details_link: MyString
+  _show_signature_track_label: MyString
+  link: MyString
+  _reporter_link: MyString
+  post_id: 
+  fthread_id: 
+
+two:
+  user_id: MyString
+  post_time: MyString
+  deleted: MyString
+  is_spam: MyString
+  votes: MyString
+  anonymous: MyString
+  comment_text: MyString
+  user_agent: MyString
+  text_type: MyString
+  _viewer_can_vote: MyString
+  _viewer_can_edit: MyString
+  _user_title: MyString
+  _user_full_name: MyString
+  _user_profile_link: MyString
+  _user_email_address: MyString
+  _user_search_link: MyString
+  _user_details_link: MyString
+  _show_signature_track_label: MyString
+  link: MyString
+  _reporter_link: MyString
+  post_id: 
+  fthread_id: 

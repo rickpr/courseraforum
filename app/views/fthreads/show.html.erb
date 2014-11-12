@@ -1,0 +1,174 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @fthread.user_id %>
+</p>
+
+<p>
+  <strong>Posted time:</strong>
+  <%= @fthread.posted_time %>
+</p>
+
+<p>
+  <strong>Last updated time:</strong>
+  <%= @fthread.last_updated_time %>
+</p>
+
+<p>
+  <strong>Last updated user:</strong>
+  <%= @fthread.last_updated_user %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @fthread.deleted %>
+</p>
+
+<p>
+  <strong>Is spam:</strong>
+  <%= @fthread.is_spam %>
+</p>
+
+<p>
+  <strong>Stickied:</strong>
+  <%= @fthread.stickied %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @fthread.approved %>
+</p>
+
+<p>
+  <strong>Unresolved:</strong>
+  <%= @fthread.unresolved %>
+</p>
+
+<p>
+  <strong>Instructor replied:</strong>
+  <%= @fthread.instructor_replied %>
+</p>
+
+<p>
+  <strong>Num posts:</strong>
+  <%= @fthread.num_posts %>
+</p>
+
+<p>
+  <strong>Num views:</strong>
+  <%= @fthread.num_views %>
+</p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @fthread.votes %>
+</p>
+
+<p>
+  <strong>Locked:</strong>
+  <%= @fthread.locked %>
+</p>
+
+<p>
+  <strong>Anonymous:</strong>
+  <%= @fthread.anonymous %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @fthread.title %>
+</p>
+
+<p>
+  <strong>Triage sync status:</strong>
+  <%= @fthread.triage_sync_status %>
+</p>
+
+<p>
+  <strong>Triage status:</strong>
+  <%= @fthread.triage_status %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @fthread.private %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @fthread.problem_id %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @fthread.link %>
+</p>
+
+<p>
+  <strong> reporter link:</strong>
+  <%= @fthread._reporter_link %>
+</p>
+
+<p>
+  <strong> thread can be resolved without triage:</strong>
+  <%= @fthread._thread_can_be_resolved_without_triage %>
+</p>
+
+<p>
+  <strong> viewer can resolve with triage:</strong>
+  <%= @fthread._viewer_can_resolve_with_triage %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @fthread.tags %>
+</p>
+
+<p>
+  <strong>Crumbs:</strong>
+  <%= @fthread.crumbs %>
+</p>
+
+<p>
+  <strong>Start page:</strong>
+  <%= @fthread.start_page %>
+</p>
+
+<p>
+  <strong>Num pages:</strong>
+  <%= @fthread.num_pages %>
+</p>
+
+<p>
+  <strong> viewer subscription:</strong>
+  <%= @fthread._viewer_subscription %>
+</p>
+
+<p>
+  <strong> viewer can edit title:</strong>
+  <%= @fthread._viewer_can_edit_title %>
+</p>
+
+<p>
+  <strong> viewer can resolve without triage:</strong>
+  <%= @fthread._viewer_can_resolve_without_triage %>
+</p>
+
+<p>
+  <strong> viewer can delete:</strong>
+  <%= @fthread._viewer_can_delete %>
+</p>
+
+<p>
+  <strong> viewer can toggle private:</strong>
+  <%= @fthread._viewer_can_toggle_private %>
+</p>
+
+<p>
+  <strong>Forum:</strong>
+  <%= @fthread.forum %>
+</p>
+
+<%= link_to 'Edit', edit_fthread_path(@fthread) %> |
+<%= link_to 'Back', fthreads_path %>

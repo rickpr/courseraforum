@@ -1,0 +1,134 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @post.order %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user_id %>
+</p>
+
+<p>
+  <strong>Post time:</strong>
+  <%= @post.post_time %>
+</p>
+
+<p>
+  <strong>Edit time:</strong>
+  <%= @post.edit_time %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @post.deleted %>
+</p>
+
+<p>
+  <strong>Is spam:</strong>
+  <%= @post.is_spam %>
+</p>
+
+<p>
+  <strong>Original:</strong>
+  <%= @post.original %>
+</p>
+
+<p>
+  <strong>Stickied:</strong>
+  <%= @post.stickied %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @post.approved %>
+</p>
+
+<p>
+  <strong>Anonymous:</strong>
+  <%= @post.anonymous %>
+</p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @post.votes %>
+</p>
+
+<p>
+  <strong>Post text:</strong>
+  <%= @post.post_text %>
+</p>
+
+<p>
+  <strong>User agent:</strong>
+  <%= @post.user_agent %>
+</p>
+
+<p>
+  <strong>Text type:</strong>
+  <%= @post.text_type %>
+</p>
+
+<p>
+  <strong> viewer can vote:</strong>
+  <%= @post._viewer_can_vote %>
+</p>
+
+<p>
+  <strong> viewer can edit:</strong>
+  <%= @post._viewer_can_edit %>
+</p>
+
+<p>
+  <strong> user title:</strong>
+  <%= @post._user_title %>
+</p>
+
+<p>
+  <strong> user full name:</strong>
+  <%= @post._user_full_name %>
+</p>
+
+<p>
+  <strong> user profile link:</strong>
+  <%= @post._user_profile_link %>
+</p>
+
+<p>
+  <strong> user email address:</strong>
+  <%= @post._user_email_address %>
+</p>
+
+<p>
+  <strong> user search link:</strong>
+  <%= @post._user_search_link %>
+</p>
+
+<p>
+  <strong> user details link:</strong>
+  <%= @post._user_details_link %>
+</p>
+
+<p>
+  <strong> show signature track label:</strong>
+  <%= @post._show_signature_track_label %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @post.link %>
+</p>
+
+<p>
+  <strong> reporter link:</strong>
+  <%= @post._reporter_link %>
+</p>
+
+<p>
+  <strong>Fthread:</strong>
+  <%= @post.fthread %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

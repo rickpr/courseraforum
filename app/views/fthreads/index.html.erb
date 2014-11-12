@@ -1,0 +1,91 @@
+<h1>Listing fthreads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Posted time</th>
+      <th>Last updated time</th>
+      <th>Last updated user</th>
+      <th>Deleted</th>
+      <th>Is spam</th>
+      <th>Stickied</th>
+      <th>Approved</th>
+      <th>Unresolved</th>
+      <th>Instructor replied</th>
+      <th>Num posts</th>
+      <th>Num views</th>
+      <th>Votes</th>
+      <th>Locked</th>
+      <th>Anonymous</th>
+      <th>Title</th>
+      <th>Triage sync status</th>
+      <th>Triage status</th>
+      <th>Private</th>
+      <th>Problem</th>
+      <th>Link</th>
+      <th> reporter link</th>
+      <th> thread can be resolved without triage</th>
+      <th> viewer can resolve with triage</th>
+      <th>Tags</th>
+      <th>Crumbs</th>
+      <th>Start page</th>
+      <th>Num pages</th>
+      <th> viewer subscription</th>
+      <th> viewer can edit title</th>
+      <th> viewer can resolve without triage</th>
+      <th> viewer can delete</th>
+      <th> viewer can toggle private</th>
+      <th>Forum</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fthreads.each do |fthread| %>
+      <tr>
+        <td><%= fthread.user_id %></td>
+        <td><%= fthread.posted_time %></td>
+        <td><%= fthread.last_updated_time %></td>
+        <td><%= fthread.last_updated_user %></td>
+        <td><%= fthread.deleted %></td>
+        <td><%= fthread.is_spam %></td>
+        <td><%= fthread.stickied %></td>
+        <td><%= fthread.approved %></td>
+        <td><%= fthread.unresolved %></td>
+        <td><%= fthread.instructor_replied %></td>
+        <td><%= fthread.num_posts %></td>
+        <td><%= fthread.num_views %></td>
+        <td><%= fthread.votes %></td>
+        <td><%= fthread.locked %></td>
+        <td><%= fthread.anonymous %></td>
+        <td><%= fthread.title %></td>
+        <td><%= fthread.triage_sync_status %></td>
+        <td><%= fthread.triage_status %></td>
+        <td><%= fthread.private %></td>
+        <td><%= fthread.problem_id %></td>
+        <td><%= fthread.link %></td>
+        <td><%= fthread._reporter_link %></td>
+        <td><%= fthread._thread_can_be_resolved_without_triage %></td>
+        <td><%= fthread._viewer_can_resolve_with_triage %></td>
+        <td><%= fthread.tags %></td>
+        <td><%= fthread.crumbs %></td>
+        <td><%= fthread.start_page %></td>
+        <td><%= fthread.num_pages %></td>
+        <td><%= fthread._viewer_subscription %></td>
+        <td><%= fthread._viewer_can_edit_title %></td>
+        <td><%= fthread._viewer_can_resolve_without_triage %></td>
+        <td><%= fthread._viewer_can_delete %></td>
+        <td><%= fthread._viewer_can_toggle_private %></td>
+        <td><%= fthread.forum %></td>
+        <td><%= link_to 'Show', fthread %></td>
+        <td><%= link_to 'Edit', edit_fthread_path(fthread) %></td>
+        <td><%= link_to 'Destroy', fthread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fthread', new_fthread_path %>

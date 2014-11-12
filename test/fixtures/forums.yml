@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: MyString
+  name: MyString
+  description: MyString
+  ftype: MyString
+  deleted: MyString
+  can_post: MyString
+  show_threads: MyString
+  resolved_tag: MyString
+  display_order: MyString
+  open_time: MyString
+  forum_moderators_only: MyString
+
+two:
+  parent_id: MyString
+  name: MyString
+  description: MyString
+  ftype: MyString
+  deleted: MyString
+  can_post: MyString
+  show_threads: MyString
+  resolved_tag: MyString
+  display_order: MyString
+  open_time: MyString
+  forum_moderators_only: MyString

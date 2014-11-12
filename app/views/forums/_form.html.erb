@@ -1,0 +1,61 @@
+<%= form_for(@forum) do |f| %>
+  <% if @forum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@forum.errors.count, "error") %> prohibited this forum from being saved:</h2>
+
+      <ul>
+      <% @forum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :parent_id %><br>
+    <%= f.text_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :ftype %><br>
+    <%= f.text_field :ftype %>
+  </div>
+  <div class="field">
+    <%= f.label :deleted %><br>
+    <%= f.text_field :deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :can_post %><br>
+    <%= f.text_field :can_post %>
+  </div>
+  <div class="field">
+    <%= f.label :show_threads %><br>
+    <%= f.text_field :show_threads %>
+  </div>
+  <div class="field">
+    <%= f.label :resolved_tag %><br>
+    <%= f.text_field :resolved_tag %>
+  </div>
+  <div class="field">
+    <%= f.label :display_order %><br>
+    <%= f.text_field :display_order %>
+  </div>
+  <div class="field">
+    <%= f.label :open_time %><br>
+    <%= f.text_field :open_time %>
+  </div>
+  <div class="field">
+    <%= f.label :forum_moderators_only %><br>
+    <%= f.text_field :forum_moderators_only %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @forum.parent_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @forum.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @forum.description %>
+</p>
+
+<p>
+  <strong>Ftype:</strong>
+  <%= @forum.ftype %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @forum.deleted %>
+</p>
+
+<p>
+  <strong>Can post:</strong>
+  <%= @forum.can_post %>
+</p>
+
+<p>
+  <strong>Show threads:</strong>
+  <%= @forum.show_threads %>
+</p>
+
+<p>
+  <strong>Resolved tag:</strong>
+  <%= @forum.resolved_tag %>
+</p>
+
+<p>
+  <strong>Display order:</strong>
+  <%= @forum.display_order %>
+</p>
+
+<p>
+  <strong>Open time:</strong>
+  <%= @forum.open_time %>
+</p>
+
+<p>
+  <strong>Forum moderators only:</strong>
+  <%= @forum.forum_moderators_only %>
+</p>
+
+<%= link_to 'Edit', edit_forum_path(@forum) %> |
+<%= link_to 'Back', forums_path %>

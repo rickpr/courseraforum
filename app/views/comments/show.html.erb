@@ -1,0 +1,114 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @comment.user_id %>
+</p>
+
+<p>
+  <strong>Post time:</strong>
+  <%= @comment.post_time %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @comment.deleted %>
+</p>
+
+<p>
+  <strong>Is spam:</strong>
+  <%= @comment.is_spam %>
+</p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @comment.votes %>
+</p>
+
+<p>
+  <strong>Anonymous:</strong>
+  <%= @comment.anonymous %>
+</p>
+
+<p>
+  <strong>Comment text:</strong>
+  <%= @comment.comment_text %>
+</p>
+
+<p>
+  <strong>User agent:</strong>
+  <%= @comment.user_agent %>
+</p>
+
+<p>
+  <strong>Text type:</strong>
+  <%= @comment.text_type %>
+</p>
+
+<p>
+  <strong> viewer can vote:</strong>
+  <%= @comment._viewer_can_vote %>
+</p>
+
+<p>
+  <strong> viewer can edit:</strong>
+  <%= @comment._viewer_can_edit %>
+</p>
+
+<p>
+  <strong> user title:</strong>
+  <%= @comment._user_title %>
+</p>
+
+<p>
+  <strong> user full name:</strong>
+  <%= @comment._user_full_name %>
+</p>
+
+<p>
+  <strong> user profile link:</strong>
+  <%= @comment._user_profile_link %>
+</p>
+
+<p>
+  <strong> user email address:</strong>
+  <%= @comment._user_email_address %>
+</p>
+
+<p>
+  <strong> user search link:</strong>
+  <%= @comment._user_search_link %>
+</p>
+
+<p>
+  <strong> user details link:</strong>
+  <%= @comment._user_details_link %>
+</p>
+
+<p>
+  <strong> show signature track label:</strong>
+  <%= @comment._show_signature_track_label %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @comment.link %>
+</p>
+
+<p>
+  <strong> reporter link:</strong>
+  <%= @comment._reporter_link %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @comment.post %>
+</p>
+
+<p>
+  <strong>Fthread:</strong>
+  <%= @comment.fthread %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

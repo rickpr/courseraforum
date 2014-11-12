@@ -1,0 +1,67 @@
+<h1>Listing comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Post time</th>
+      <th>Deleted</th>
+      <th>Is spam</th>
+      <th>Votes</th>
+      <th>Anonymous</th>
+      <th>Comment text</th>
+      <th>User agent</th>
+      <th>Text type</th>
+      <th> viewer can vote</th>
+      <th> viewer can edit</th>
+      <th> user title</th>
+      <th> user full name</th>
+      <th> user profile link</th>
+      <th> user email address</th>
+      <th> user search link</th>
+      <th> user details link</th>
+      <th> show signature track label</th>
+      <th>Link</th>
+      <th> reporter link</th>
+      <th>Post</th>
+      <th>Fthread</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td><%= comment.user_id %></td>
+        <td><%= comment.post_time %></td>
+        <td><%= comment.deleted %></td>
+        <td><%= comment.is_spam %></td>
+        <td><%= comment.votes %></td>
+        <td><%= comment.anonymous %></td>
+        <td><%= comment.comment_text %></td>
+        <td><%= comment.user_agent %></td>
+        <td><%= comment.text_type %></td>
+        <td><%= comment._viewer_can_vote %></td>
+        <td><%= comment._viewer_can_edit %></td>
+        <td><%= comment._user_title %></td>
+        <td><%= comment._user_full_name %></td>
+        <td><%= comment._user_profile_link %></td>
+        <td><%= comment._user_email_address %></td>
+        <td><%= comment._user_search_link %></td>
+        <td><%= comment._user_details_link %></td>
+        <td><%= comment._show_signature_track_label %></td>
+        <td><%= comment.link %></td>
+        <td><%= comment._reporter_link %></td>
+        <td><%= comment.post %></td>
+        <td><%= comment.fthread %></td>
+        <td><%= link_to 'Show', comment %></td>
+        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Comment', new_comment_path %>

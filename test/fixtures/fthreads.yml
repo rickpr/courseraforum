@@ -1,0 +1,73 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  posted_time: MyString
+  last_updated_time: MyString
+  last_updated_user: MyString
+  deleted: MyString
+  is_spam: MyString
+  stickied: MyString
+  approved: MyString
+  unresolved: MyString
+  instructor_replied: MyString
+  num_posts: MyString
+  num_views: MyString
+  votes: MyString
+  locked: MyString
+  anonymous: MyString
+  title: MyString
+  triage_sync_status: MyString
+  triage_status: MyString
+  private: MyString
+  problem_id: MyString
+  link: MyString
+  _reporter_link: MyString
+  _thread_can_be_resolved_without_triage: MyString
+  _viewer_can_resolve_with_triage: MyString
+  tags: MyString
+  crumbs: MyString
+  start_page: MyString
+  num_pages: MyString
+  _viewer_subscription: MyString
+  _viewer_can_edit_title: MyString
+  _viewer_can_resolve_without_triage: MyString
+  _viewer_can_delete: MyString
+  _viewer_can_toggle_private: MyString
+  forum_id: 
+
+two:
+  user_id: MyString
+  posted_time: MyString
+  last_updated_time: MyString
+  last_updated_user: MyString
+  deleted: MyString
+  is_spam: MyString
+  stickied: MyString
+  approved: MyString
+  unresolved: MyString
+  instructor_replied: MyString
+  num_posts: MyString
+  num_views: MyString
+  votes: MyString
+  locked: MyString
+  anonymous: MyString
+  title: MyString
+  triage_sync_status: MyString
+  triage_status: MyString
+  private: MyString
+  problem_id: MyString
+  link: MyString
+  _reporter_link: MyString
+  _thread_can_be_resolved_without_triage: MyString
+  _viewer_can_resolve_with_triage: MyString
+  tags: MyString
+  crumbs: MyString
+  start_page: MyString
+  num_pages: MyString
+  _viewer_subscription: MyString
+  _viewer_can_edit_title: MyString
+  _viewer_can_resolve_without_triage: MyString
+  _viewer_can_delete: MyString
+  _viewer_can_toggle_private: MyString
+  forum_id: 
